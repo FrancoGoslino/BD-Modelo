@@ -3,7 +3,6 @@
 Proyecto académico de modelado y programación de una base de datos relacional para un sistema de gestión de compras y envíos.  
 Pensado para demostrar uso de **MySQL**, **stored procedures**, **funciones**, **triggers**, **transacciones** y **vistas**.
 
-**Revisar /img/img1.png para ver DER**
 ---
 
 ## 🧩 Descripción del proyecto
@@ -66,10 +65,6 @@ A continuación se presentan los diagramas del modelo de base de datos utilizado
 ### Diagrama entidad–relación (general)
 
 ![Diagrama entidad–relación del sistema de envíos](img/img1.png)
-
-### Diagrama entidad–relación con cardinalidades destacadas
-
-![Diagrama entidad–relación con relaciones y cardinalidades](img/img2.png)
 
 ---
 
