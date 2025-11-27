@@ -93,11 +93,9 @@ A continuación se presentan los diagramas del modelo de base de datos utilizado
 
 2. Ejecutar los scripts en este orden:
 
-Tablas.sql – crea todas las tablas necesarias.
-Datos.sql – inserta datos de prueba.
-funciones.sql – crea funciones, triggers, stored procedures y vistas.
+Tablas.sql  –  Datos.sql  –  funciones.sql
 
-Probar algunos casos de uso (incluidos al final de cada script):
+3. Probar algunos casos de uso (incluidos al final de cada script):
 Consultar stock de un producto:
     ```sql
     SELECT fn_stock_producto('Casco de seguridad industrial');
@@ -127,11 +125,7 @@ Avanzar estado de todos los envíos en “Preparando”:
 EL objetivo de este repo es realizar un diseño de modelo relacional para un sistema realista de compras y 
 envíos e implementación de lógica de negocio en la capa de base de datos.
 
-Buenas prácticas de:
-  1- uso de transacciones
-  2- manejo de errores controlado,
-  3- auditoría de cambios,
-  4- y vistas para análisis de datos.
+Buenas prácticas de: Uso de transacciones, manejo de errores controlado, auditoría de cambios, y vistas para análisis de datos.
 
 📬 Contacto
 Autor: Franco Goslino
