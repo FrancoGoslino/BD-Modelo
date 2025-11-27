@@ -100,15 +100,15 @@ funciones.sql – crea funciones, triggers, stored procedures y vistas.
 Probar algunos casos de uso (incluidos al final de cada script):
 Consultar stock de un producto:
     ```sql
-       SELECT fn_stock_producto('Casco de seguridad industrial');
-       ```_
+    SELECT fn_stock_producto('Casco de seguridad industrial');
+    ```_  
        
 Registrar una compra:
     ```sql
        CALL sp_armar_paquete('Paquete_001', 2, 1);
     CALL sp_registrar_envio('Juan', '2002', 'Paquete_001', @fecha_entrega);
     SELECT @fecha_entrega;
-       ```_
+     ```_    
 
 Armar un paquete y asignar un envío:
     ```sql
@@ -128,10 +128,10 @@ EL objetivo de este repo es realizar un diseño de modelo relacional para un sis
 envíos e implementación de lógica de negocio en la capa de base de datos.
 
 Buenas prácticas de:
-- uso de transacciones,
-- manejo de errores controlado,
-- auditoría de cambios,
-- y vistas para análisis de datos.
+  1- uso de transacciones
+  2- manejo de errores controlado,
+  3- auditoría de cambios,
+  4- y vistas para análisis de datos.
 
 📬 Contacto
 Autor: Franco Goslino
