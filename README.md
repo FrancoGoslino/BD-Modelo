@@ -96,26 +96,27 @@ A continuación se presentan los diagramas del modelo de base de datos utilizado
 Tablas.sql  –  Datos.sql  –  funciones.sql
 
 3. Probar algunos casos de uso (incluidos al final de cada script):
-Consultar stock de un producto:
+
+4. Consultar stock de un producto:
     ```sql
     SELECT fn_stock_producto('Casco de seguridad industrial');
     ```_  
        
-Registrar una compra:
+5. Registrar una compra:
     ```sql
        CALL sp_armar_paquete('Paquete_001', 2, 1);
     CALL sp_registrar_envio('Juan', '2002', 'Paquete_001', @fecha_entrega);
     SELECT @fecha_entrega;
      ```_    
 
-Armar un paquete y asignar un envío:
+6. Armar un paquete y asignar un envío:
     ```sql
     CALL sp_armar_paquete('Paquete_001', 2, 1);
     CALL sp_registrar_envio('Juan', '2002', 'Paquete_001', @fecha_entrega);
     SELECT @fecha_entrega;
     ```_
     
-Avanzar estado de todos los envíos en “Preparando”:
+7. Avanzar estado de todos los envíos en “Preparando”:
     ```sql
     CALL sp_avanzar_estado_envio('Preparando');
      ```_
