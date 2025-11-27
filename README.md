@@ -93,33 +93,29 @@ A continuación se presentan los diagramas del modelo de base de datos utilizado
 
 2. Ejecutar los scripts en este orden:
 
-Tablas.sql  –  Datos.sql  –  funciones.sql
+  Tablas.sql  –  Datos.sql  –  funciones.sql
 
 3. Probar algunos casos de uso (incluidos al final de cada script):
 
 4. Consultar stock de un producto:
     ```sql
     SELECT fn_stock_producto('Casco de seguridad industrial');
-    ```_  
        
 5. Registrar una compra:
     ```sql
        CALL sp_armar_paquete('Paquete_001', 2, 1);
     CALL sp_registrar_envio('Juan', '2002', 'Paquete_001', @fecha_entrega);
     SELECT @fecha_entrega;
-     ```_    
 
 6. Armar un paquete y asignar un envío:
     ```sql
     CALL sp_armar_paquete('Paquete_001', 2, 1);
     CALL sp_registrar_envio('Juan', '2002', 'Paquete_001', @fecha_entrega);
     SELECT @fecha_entrega;
-    ```_
     
 7. Avanzar estado de todos los envíos en “Preparando”:
     ```sql
     CALL sp_avanzar_estado_envio('Preparando');
-     ```_
 
 ## 🎯 Objetivo del proyecto
 
