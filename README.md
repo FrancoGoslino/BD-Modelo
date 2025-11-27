@@ -89,7 +89,6 @@ A continuación se presentan los diagramas del modelo de base de datos utilizado
    ```sql
    CREATE DATABASE modelo_envios;
    USE modelo_envios;
-   ```_
 
 2. Ejecutar los scripts en este orden:
 
@@ -103,7 +102,7 @@ A continuación se presentan los diagramas del modelo de base de datos utilizado
        
 5. Registrar una compra:
     ```sql
-       CALL sp_armar_paquete('Paquete_001', 2, 1);
+    CALL sp_armar_paquete('Paquete_001', 2, 1);
     CALL sp_registrar_envio('Juan', '2002', 'Paquete_001', @fecha_entrega);
     SELECT @fecha_entrega;
 
